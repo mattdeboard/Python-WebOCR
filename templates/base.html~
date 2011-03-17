@@ -1,0 +1,23 @@
+<html>
+<head>
+  <link href="http://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="static/css/screen.css" type="text/css" media="print" media="screen, projection">
+  <link rel="stylesheet" href="static/css/print.css" type="text/css" media="print" media="print">
+</head>
+<title>WebOCR</title>
+<body>
+<div id="header">
+<div id="subheader">
+<div class="container">
+<form id="upload" class="span-16 last" action="." method="POST" enctype="multipart/form-data">
+{% for field in form %}
+<label class="span-8">{{ field.label }}</label><div class="span-8 last">{{ field }}</div>
+{% endfor %}
+<button class="link span-8 last append-bottom prepend-2" type="submit" />
+Upload</button>
+</form>
+</div><!-- .container -->
+</div><!-- #subheader -->
+</div><!-- #header -->
+</body>
+</html>

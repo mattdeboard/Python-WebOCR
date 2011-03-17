@@ -1,0 +1,53 @@
+/*_buttons.scss*/
+
+@import "partials/_colors.scss";
+
+a.buttons, button {
+      display:block;
+      float:left;
+      margin:0.7em 0.5em 0.7em 0;
+      padding:5px 10px 5px 7px;
+      
+      font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serf;
+      font-size: 100%;
+      line-height: 130%;
+      text-decoration: none;
+      font-weight:bold;
+      color: $font_color;
+
+      border: solid 1px $border_color;
+      background: $button_bg_color;
+      cursor:pointer;
+      -webkit-boder-radius: .5em;
+      -moz-border-radius: .5 em;
+      border-radius: .5em;
+
+      -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+      -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+      box-shadow: 0 1px 3px rgba(0,0,0,.3);
+
+      -webkit-gradient(linear, left top, left bottom, from($dark_btn_gradient), to($light_btn_gradient));
+      -moz-linear-gradient(top, $dark_btn_gradient, $light_btn_gradient);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$dark_btn_gradient', endColorstr='$light_btn_gradient');
+	   }
+
+button {width:auto;overflow:visible;padding: 4px 10px 3px 7px;}
+button[type] {padding:4px 10px 4px 7px; line-height:17px;}
+*:first-child+html button [type] {padding: 4px 10px 3px 7px;}
+button img, a.button img {margin: 0 3px -3px 0 !important; padding:0; border:none;width:16px; height:16px; float:none;}
+
+button:hover, a.button:hover {
+       background-color:$button_bg_color;
+       border: solid 1px $border_color;
+
+       -webkit-gradient(linear, left top, left bottom, from($light_btn_gradient), to($dark_btn_gradient));
+      -moz-linear-gradient(top, $light_btn_gradient, $dark_btn_gradient);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$light_btn_gradient', endColorstr='$dark_btn_gradient');
+}
+
+a.button:active {background-color:$dark_btn_color}
+a.positive:hover, button.positive:hover {background-color:$light_btn_gradient;}
+a.positive:active {background-color:#529214;border: solid 1px #538312;color:#0F3B5F;}
+body
+a.negative:hover, button.negative:hover {background-color:#C6D729;}
+a.negative:active {background-color:#d12f19;color:#fff;}

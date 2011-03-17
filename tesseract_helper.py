@@ -59,6 +59,7 @@ def train(boxfile_directory):
         root, extension = os.path.splitext(filename)
         subprocess.call(["tesseract", filename, root,
                          "nobatch","box.train.stderr"])
+        subprocess.call(["unicharset_extractor", ''.join(root+'.box')])
     
     return "All boxfiles processed. Please check stderr for error messages."
  
