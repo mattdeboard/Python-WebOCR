@@ -50,10 +50,7 @@ def repair(boxfile_directory):
             # hardcoded for sake of expediency.
             os.rename(filename, ''.join(root + '.g4.box'))
         
-    if extension == '.tif':
-        tif_files.append(root)
-        
-    return tif_files
+    return "All files renamed."
 
 def train(boxfile_directory):
     '''This function automates "training" multiple font or language files
@@ -62,6 +59,7 @@ def train(boxfile_directory):
         root, extension = os.path.splitext(filename)
         subprocess.call(["tesseract", filename, root,
                          "nobatch","box.train.stderr"])
+    return "All boxfiles processed. Please check stderr for error messages."
  
 if __name__ == "__main__":
     main()
