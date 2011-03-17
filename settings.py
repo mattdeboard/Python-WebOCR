@@ -1,7 +1,7 @@
 from flask import Flask
 from secret import secret_key
 
-UPLOAD_FOLDER = "uploads/"
+UPLOAD_FILES_DEST = "uploads/"
 
 ACCEPTED_TYPES = set(["jpg", "gif", "png", "jpeg", 
                       "tif", "tiff", "bmp"])

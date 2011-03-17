@@ -39,9 +39,9 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
 .accentheader {color:#9c3839;}
 .shadow {text-shadow:1px 1px 1px #666;}
 .linkhead {color:white;font-size:14px;font-weight:bold;}
-body #header {background-color:#c6d729;height:124px;-webkit-box-shadow:0 3px 5px rgba(0, 0, 0, 0.5);-moz-box-shadow:0 3px 5px rgba(0, 0, 0, 0.5);}
-body #subheader {background-color:#0f3b5f;height:100px;-webkit-box-shadow:0 3px 3px rgba(0, 0, 0, 0.3);-moz-box-shadow:0 3px 3px rgba(0, 0, 0, 0.3);}
-body #top {height:310px;background:#c6d729;-webkit-box-shadow:0 3px 10px rgba(0, 0, 0, 0.7);-moz-box-shadow:0 3px 10px rgba(0, 0, 0, 0.7);}
+body #header {background-color:#5a5a5a;height:124px;-webkit-box-shadow:0 3px 5px rgba(0, 0, 0, 0.5);-moz-box-shadow:0 3px 5px rgba(0, 0, 0, 0.5);}
+body #subheader {background-color:#720000;height:100px;-webkit-box-shadow:0 3px 3px rgba(0, 0, 0, 0.3);-moz-box-shadow:0 3px 3px rgba(0, 0, 0, 0.3);}
+body #top {height:310px;background:#5a5a5a;-webkit-box-shadow:0 3px 10px rgba(0, 0, 0, 0.7);-moz-box-shadow:0 3px 10px rgba(0, 0, 0, 0.7);}
 body #stripe {height:270px;background:#0f3b5f;}
 p {margin:0 0 1.5em;}
 .left {float:left !important;}
