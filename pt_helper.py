@@ -60,7 +60,7 @@ def train(boxfile_directory):
         subprocess.call(["tesseract", filename, root,
                          "nobatch","box.train.stderr"])
     
-        return "All boxfiles processed. Please check stderr for error messages."
+    return "All boxfiles processed. Please check stderr for error messages."
  
 if __name__ == "__main__":
     main()
